@@ -1,6 +1,8 @@
 #include<iostream>
-
 using namespace std;
+
+template <class dog>
+void mySwap(dog &x, dog &y);
 
 int main(){
 	int x, y;
@@ -30,3 +32,9 @@ int main(){
 	return 0;
 }
 
+template <class dog>
+void mySwap(dog &x, dog &y) {
+    dog cat = x;  
+    x = y;        
+    y = cat;     
+}
